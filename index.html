@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style9.css">
+</head>
+<body>
+ 
+<!--radio buttons to move slides-->
+<div id="buttons">
+ 
+<div id="buttons">
+<input id="1918button" name="transform" type="radio" value="1918button">
+<label for = "1918button">C</label>
+ 
+<input id="1907button" name="transform" type="radio" value="1907button">
+<label for = "1907button">L</label>
+ 
+<input id="1910button" name="transform" type="radio" value="1910button">
+<label for = "1910button">I</label>
+ 
+<input id="1918-2button" name="transform" type="radio" value="1918-2button">
+<label for = "1918-2button">C</label>
+ 
+<input id="1982button" name="transform" type="radio" value="1982button">
+<label for = "1982button">K</label>
+ 
+<input id="1941button" name="transform" type="radio" value="1941button">
+<label for = "1941button">M</label>
+ 
+<input id="1940button" name="transform" type="radio" value="1940button">
+<label for = "1940button">E</label>
+ 
+<!--div for rotating slide -->
+<div class="container">
+<figure class="slide">
+<h1 id="heading">20th Century Artists</h1>
+ 
+<div id="slide1">
+<p class="Year" onclick="myFunction()">1918</p>
+<p id="1918info"></p>
+</div>
+ 
+<div id="slide2">
+<p class="Year" onclick="myFunction1()">1907</p>
+<p id="1907info"></p>
+</div>
+ 
+<div id="slide3">
+<p class="Year" onclick="myFunction2()">1910</p>
+<p id="1910info"></p>
+</div>
+ 
+<div id="slide4">
+<p class="Year" onclick="myFunction3()">1918</p>
+<p id="1918-2info"></p>
+</div>
+ 
+<div id="slide5">
+<p class="Year" onclick="myFunction4()">1982</p>
+<p id="1982info"></p>
+</div>
+ 
+<div id="slide6">
+<p class="Year" onclick="myFunction5()">1941</p>
+<p id="1941info"></p>
+</div>
+ 
+<div id="slide7">
+<p class="Year" onclick="myFunction6()">1940</p>
+<p id="1940info"></p>
+</div>
+ 
+</figure>
+</div>
+</div><!--End of buttons div-->
+</div><!--end of container div-->
+
+<div id="audio">
+<audio controls autoplay loop>
+  <source src="Kartell.ogg" type="audio/ogg">
+  <source src="Kartell.mp3" type="audio/mpeg">
+</audio>
+</div>
+ 
+<script>
+function myFunction() {
+  document.getElementById("1918info").innerHTML = "<img src='http://d2jv9003bew7ag.cloudfront.net/uploads/Piet-Mondrian-Self-portrait-1918.jpg' style='height:150px;width:150px;'><br>Self Portrait <br> Piet Mondrian";
+}
+ 
+function myFunction1() {
+  document.getElementById("1907info").innerHTML = "<img src='http://d2jv9003bew7ag.cloudfront.net/uploads/Pablo-Picasso-Self-portrait-1907.jpg'style='height:150px;width:150px;'><br>Pablo Picasso<br> Self-portrait";
+}
+ 
+function myFunction2() {
+  document.getElementById("1910info").innerHTML = "<img src='http://d2jv9003bew7ag.cloudfront.net/uploads/Kasimir-Malevich-Self-portrait-1910.jpg'style='height:150px;width:150px;'><br>Kazimir Malevich <br> Self-portrait";
+}
+ 
+function myFunction3() {
+  document.getElementById("1918-2info").innerHTML = "<img src='http://d2jv9003bew7ag.cloudfront.net/uploads/Jean-Michel-Basquiat-Self-portrait-1982.jpg'style='height:150px;width:150px;'><br>Georgia O’Keeffe <br>Hands";
+}
+ 
+function myFunction4() {
+  document.getElementById("1982info").innerHTML = "<img src='http://d2jv9003bew7ag.cloudfront.net/uploads/Alfred-Stieglitz-Georgia-OKeeffe-Hands-1918.jpg'style='height:150px;width:150px;'><br>Jean Michel Basquiat<br>Self portrait";
+}
+ 
+function myFunction5() {
+  document.getElementById("1941info").innerHTML = "<img src='http://d2jv9003bew7ag.cloudfront.net/uploads/Salvador-Dali-Soft-Self-Portrait-with-Fried-Bacon-1941.jpg'style='height:150px;width:150px;'><br>Salvador Dali<br>Soft Self-Portrait with Fried Bacon";
+}
+ 
+function myFunction6() {
+  document.getElementById("1940info").innerHTML = "<img src='http://d2jv9003bew7ag.cloudfront.net/uploads/Frida-Kahlo-Self-Portrait-with-Thorn-Necklace-and-Hummingbird-1940-1.jpg'style='height:150px;width:150px;'><br>Frida Kahlo<br>Self-Portrait with Thorn Necklace and Hummingbird";
+}
+ 
+</script>
+ 
+</body>
+</html>
